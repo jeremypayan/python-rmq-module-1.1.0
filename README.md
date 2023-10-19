@@ -58,8 +58,8 @@ The three main classes are :
 2. Git clone the project 
 
 
-- HTTPS: ```git clone https://enovee.visualstudio.com/cityscoot_Python/_git/python-rmq-module-1.1.0 ```
-- SSH: ```git clone enovee@vs-ssh.visualstudio.com:v3/enovee/cityscoot_Python/python-rmq-module-1.1.0```
+- HTTPS: ```git clone https://github.com/jeremypayan/python-rmq-module-1.1.0.git```
+- SSH: ```git clone git@github.com:jeremypayan/python-rmq-module-1.1.0.git```
 
 3. Install the requirements
 ```
@@ -77,11 +77,11 @@ If you need to modify a config, you can do it directly onto the file !
 
 6. create a .env file and set CONFIG, ENV and PWD variables : 
 - CONFIG corresponds to the track to config directory on your setup
-- ENV corresponds to the corresponding env into rmq.yaml (for now there is only preprod)
-- PWD corresponds to your password to access to the RMQ server. It will not be necessary for RMQ local installations. 
+- ENV corresponds to the corresponding env in rmq.yaml (for now there is only preprod)
+- PWD corresponds to your password to access to the RMQ server.  
 
 
-6. Make tests and go on ! 
+6.bis Make tests and go on ! 
 ```
 make test
 ```
@@ -119,9 +119,9 @@ They are in the .env file. The ENV variable corresponds to the env into which yo
 The rmq.yaml explicits the cofiguration for a given ENV. 
 ```
 preprod :
- host : 'win-preprod-aws.cityscoot.ovh'
- user : 'ep-monitoring-python'
- port : 5672
+ host : 'HOST'
+ user : 'USER'
+ port : PORT
 ```
 ## Matching the good env 
 the config.py file gets the config according the rmq.yaml file and the corresponding ENV (preprod for example). 

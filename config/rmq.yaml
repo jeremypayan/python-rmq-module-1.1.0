@@ -1,4 +1,4 @@
 preprod : 
- host : 'win-preprod-aws.cityscoot.ovh'
- user : 'ep-monitoring-python'
- port : 5672
+ host : 'HOST'
+ user : 'USER'
+ port : PORT
